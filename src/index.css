@@ -18,7 +18,7 @@ body {
   display: block;
 }
 
-/* STYLING LANDING PAGE TAB */
+/* STYLING FOR HEADER */
 
 .navBar {
   top: 0;
@@ -44,6 +44,8 @@ body {
   transform: scale(1.05);
 }
 
+/* STYLING LANDING PAGE TAB */
+
 .main {
   display: flex;
   flex-direction: column;
@@ -51,7 +53,10 @@ body {
 }
 
 .main-header-img {
+  margin-top: 20px;
   width: 100%;
+  scale: 0.9;
+  border-radius: 15px;
 }
 
 .main-header-description {
@@ -67,6 +72,13 @@ body {
 .main-header-description-p {
   font-weight: 300;
   max-width: 30rem;
+}
+
+/* STYLING FOR VOLUNTEER TAB */
+
+.volunteer-tab-container {
+  display: flex;
+  min-height: 100vh;
 }
 
 /* STYLING FOR NEW ITEM TAB */
@@ -139,6 +151,39 @@ body {
 }
 
 .item-img:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+/* FOOTER STYLING */
+
+.navBar-footer {
+  display: grid;
+  margin-top: 100px;
+  background-color: #e5eaf5;
+  padding: 0;
+}
+
+.navBar-footer-ul {
+  padding: 7px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.footer-img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  margin-top: 7px;
+}
+
+.navBar-footer-li {
+  transition: 1s;
+}
+
+.navBar-footer-li:hover {
   cursor: pointer;
   transform: scale(1.05);
 }

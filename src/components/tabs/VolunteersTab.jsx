@@ -1,8 +1,9 @@
 export default function VolunteersTab() {
   return (
     <>
-      <div>
-        <h1>THIS IS THE VOLUNTEERS TAB NOW</h1>
+      <div className="volunteer-tab-container">
+        <div className="volunteer-tab-header"></div>
+        <div className="volunteer-tab-main"></div>
       </div>
     </>
   );

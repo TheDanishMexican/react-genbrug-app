@@ -7,7 +7,7 @@ export default function Navbar({ getTabIndex }) {
       <nav className="navBar">
         <ul className="navBar-ul">
           <li onClick={() => getTabIndex(2)} className="navBar-li">
-            TILFØJ FRIVLLIG
+            TILFØJ FRIVILLIG
           </li>
           <li onClick={() => getTabIndex(1)} className="navBar-li">
             FORSIDE
