@@ -1,7 +1,7 @@
 export default function MainContent() {
   return (
     <>
-      <main className="main">
+      <main className="main fade-in">
         <header className="main-header">
           <img
             className="main-header-img"

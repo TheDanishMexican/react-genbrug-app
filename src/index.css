@@ -23,6 +23,7 @@ body {
 .navBar {
   top: 0;
   position: sticky;
+  z-index: 100;
 }
 
 .navBar-ul {
@@ -108,4 +109,52 @@ body {
 
 .new-item-header {
   margin: 0;
+}
+
+.product-tab-main {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.item-container {
+  width: 35%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.item-name {
+  color: black;
+}
+
+.item-img {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  transition: 1s;
+}
+
+.item-img:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+/*  ANIMATION */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Start with 0 opacity */
+  }
+  to {
+    opacity: 1; /* End with 1 opacity */
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+  opacity: 1;
 }
