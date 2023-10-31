@@ -1,0 +1,111 @@
+/* STYLING FOR EVERYTHING */
+
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.inactive-tab {
+  display: none;
+}
+
+.active-tab {
+  display: block;
+}
+
+/* STYLING LANDING PAGE TAB */
+
+.navBar {
+  top: 0;
+  position: sticky;
+}
+
+.navBar-ul {
+  display: flex;
+  margin: auto;
+  padding: 40px 100px;
+  list-style-type: none;
+  background-color: #e5eaf5;
+}
+
+.navBar-li {
+  margin: auto;
+  transition: 1s;
+}
+
+.navBar-li:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-header-img {
+  width: 100%;
+}
+
+.main-header-description {
+  padding: 10px 50px;
+  margin-top: 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f0ece2;
+}
+
+.main-header-description-p {
+  font-weight: 300;
+  max-width: 30rem;
+}
+
+/* STYLING FOR NEW ITEM TAB */
+
+.new-item-fieldset {
+  box-shadow: 0px 5px 7px 2px #e5eaf5;
+  border-radius: 5px;
+}
+
+.product-tab-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-tab-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 100px;
+}
+
+.product-tab-h1 {
+  margin: 0;
+}
+
+.new-item-input-container {
+  padding: 10px;
+}
+
+.new-item-dialog {
+  border-radius: 10px;
+  border: 1px solid;
+}
+
+.new-item-input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: self-end;
+  gap: 20px;
+}
+
+.new-item-header {
+  margin: 0;
+}
