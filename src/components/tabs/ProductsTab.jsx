@@ -1,19 +1,25 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import NewItemForm from "../forms/NewItemForm";
 import AddClothesDialog from "../dialogs/AddClothesDialog";
 import ProductItem from "../ProductItem";
 
 export default function ProductsTab() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const [formData, setFormData] = useState({
     produktType: "",
+    title: "",
+    price: "",
   });
 
   function handleChange(event) {
-    const { name, value } = event.target;
+    const { name, value, type, checked } = event.target;
     setFormData((currentFormData) => {
       return {
         ...currentFormData,
-        [name]: value,
+        [name]: type === "checkbox" ? checked : value,
       };
     });
   }
@@ -65,7 +71,9 @@ export default function ProductsTab() {
             }
           />
         </div>
-        {formData.produktType === "tøj" && <AddClothesDialog />}
+        {formData.produktType === "tøj" && (
+          <AddClothesDialog handleChange={handleChange} formData={formData} />
+        )}
       </div>
     </>
   );

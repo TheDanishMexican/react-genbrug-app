@@ -4,6 +4,7 @@ import LandingPage from "./components/tabs/LandingPageTab";
 import ProductsTab from "./components/tabs/ProductsTab";
 import VolunteersTab from "./components/tabs/VolunteersTab";
 import Footer from "./Footer";
+import PracticalInfo from "./components/tabs/PracticalInfoTab";
 
 export default function App() {
   const [toggleTab, setToggleTab] = useState(1);
@@ -18,7 +19,8 @@ export default function App() {
       {toggleTab === 1 && <LandingPage />}
       {toggleTab === 2 && <VolunteersTab />}
       {toggleTab === 3 && <ProductsTab />}
-      <Footer />
+      {toggleTab === 4 && <PracticalInfo />}
+      <Footer getTabIndex={getTabIndex} />
     </>
   );
 }

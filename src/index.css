@@ -1,4 +1,4 @@
-/* STYLING FOR EVERYTHING */
+/* GENERAL STYLING  */
 
 * {
   font-family: "Open Sans", sans-serif;
@@ -16,6 +16,22 @@ body {
 
 .active-tab {
   display: block;
+}
+
+/*  ANIMATION */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Start with 0 opacity */
+  }
+  to {
+    opacity: 1; /* End with 1 opacity */
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+  opacity: 1;
 }
 
 /* STYLING FOR HEADER */
@@ -77,6 +93,13 @@ body {
 /* STYLING FOR VOLUNTEER TAB */
 
 .volunteer-tab-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* STYLING FOR INFO TAB */
+
+.practicalInfo-container {
   display: flex;
   min-height: 100vh;
 }
@@ -188,18 +211,25 @@ body {
   transform: scale(1.05);
 }
 
-/*  ANIMATION */
+/*            DIALOGS STYLING            */
 
-@keyframes fadeIn {
-  from {
-    opacity: 0; /* Start with 0 opacity */
-  }
-  to {
-    opacity: 1; /* End with 1 opacity */
-  }
+/*CREATE NEW PRODUCT DIALOG*/
+
+.create-product-dialog {
+  border-radius: 10px;
 }
 
-.fade-in {
-  animation: fadeIn 1s ease-in-out;
-  opacity: 1;
+.close-button:hover {
+  cursor: pointer;
+}
+
+.create-product-form {
+  display: flex;
+  gap: 100px;
+  margin-top: 10px;
+}
+
+.label-input-container {
+  display: flex;
+  flex-direction: column;
 }

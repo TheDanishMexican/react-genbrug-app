@@ -1,10 +1,14 @@
-export default function Footer() {
+export default function Footer({ getTabIndex }) {
+  Footer.propTypes;
+
   return (
     <>
       <>
         <nav className="navBar-footer">
           <ul className="navBar-footer-ul">
-            <li className="navBar-footer-li">PRAKTISKE INFO</li>
+            <li onClick={() => getTabIndex(4)} className="navBar-footer-li">
+              PRAKTISKE INFO
+            </li>
             <li className="navBar-footer-li">
               <img
                 className="footer-img"
