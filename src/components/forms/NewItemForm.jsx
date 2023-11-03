@@ -21,7 +21,7 @@ export default function NewItemForm({ formData, handleChange }) {
                   name="produktType"
                 >
                   <option disabled value="">
-                    --Vælg en type--
+                    --Vælg type--
                   </option>
                   <option value="tøj">Tøj</option>
                   <option value="møbel">Møbel</option>
