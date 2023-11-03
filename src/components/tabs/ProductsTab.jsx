@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
 import NewItemForm from "../forms/NewItemForm";
 import AddClothesDialog from "../dialogs/AddClothesDialog";
-import ProductItem from "../ProductItem";
+import ProductItem from "../item/ProductItem";
 
-export default function ProductsTab() {
+export default function ProductsTab({ getTabIndex }) {
+  ProductsTab.propTypes;
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -12,6 +14,11 @@ export default function ProductsTab() {
     produktType: "",
     title: "",
     price: "",
+    image: "",
+    description: "",
+    category: "",
+    size: "",
+    state: "",
   });
 
   function handleChange(event) {
@@ -35,12 +42,14 @@ export default function ProductsTab() {
         </div>
         <div className="product-tab-main">
           <ProductItem
+            getTabIndex={getTabIndex}
             name={"Tøj til kvinder"}
             image={
               "https://i0.pickpik.com/photos/828/755/695/shopping-mall-shop-windows-fashionable-clothes-feminine-weakness-preview.jpg"
             }
           />
           <ProductItem
+            getTabIndex={getTabIndex}
             name={"Tøj til mænd"}
             image={
               "https://retaildesignblog.net/wp-content/uploads/2015/07/Mens-The-Lab-department-store-by-Magasin-du-Nord-Copenhagen-Denmark.jpg"
@@ -53,6 +62,7 @@ export default function ProductsTab() {
             }
           />
           <ProductItem
+            getTabIndex={getTabIndex}
             name={"Diverse tøj"}
             image={
               "https://scholarlycommons.pacific.edu/kam-photos/2128/preview.jpg"

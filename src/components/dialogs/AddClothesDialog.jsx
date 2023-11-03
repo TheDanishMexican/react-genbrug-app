@@ -19,7 +19,7 @@ export default function AddClothesDialog({ handleChange, formData }) {
             <label htmlFor="create-product-title">Overskrift:</label>
             <input
               type="text"
-              placeholder="indtast overskrift"
+              placeholder="Indtast overskrift"
               name="title"
               onChange={handleChange}
               value={formData.title}
@@ -31,11 +31,23 @@ export default function AddClothesDialog({ handleChange, formData }) {
             <label htmlFor="create-product-price">Pris i hele kr:</label>
             <input
               type="number"
-              placeholder="indtast pris"
+              placeholder="Indtast pris"
               name="price"
               onChange={handleChange}
               value={formData.price}
               id="create-product-price"
+            />
+          </div>
+
+          <div className="label-input-container">
+            <label htmlFor="create-product-description">Beskrivelse:</label>
+            <input
+              type="textarea"
+              placeholder="Indtast kort beskrivelse"
+              name="description"
+              onChange={handleChange}
+              value={formData.description}
+              id="create-product-description"
             />
           </div>
         </form>

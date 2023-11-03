@@ -211,6 +211,13 @@ body {
   transform: scale(1.05);
 }
 
+/*  STYLING CLOTHES ITEM */
+.clothing-item-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
 /*            DIALOGS STYLING            */
 
 /*CREATE NEW PRODUCT DIALOG*/
@@ -225,7 +232,9 @@ body {
 
 .create-product-form {
   display: flex;
-  gap: 100px;
+  flex-wrap: wrap;
+  width: 500px;
+  gap: 50px;
   margin-top: 10px;
 }
 
