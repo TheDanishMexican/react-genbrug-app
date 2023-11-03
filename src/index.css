@@ -224,16 +224,23 @@ body {
 
 .create-product-dialog {
   border-radius: 10px;
+  background-color: #e5eaf5;
+}
+
+.close-button {
+  border-radius: 115px;
 }
 
 .close-button:hover {
   cursor: pointer;
+  background-color: gray;
 }
 
 .create-product-form {
   display: flex;
   flex-wrap: wrap;
-  width: 500px;
+  justify-content: center;
+  width: 400px;
   gap: 50px;
   margin-top: 10px;
 }
